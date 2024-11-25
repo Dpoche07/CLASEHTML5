@@ -1,0 +1,82 @@
+/* Selector universal*/
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Selector de etiqueta*/
+header, footer {
+    background-color: black;
+  
+}
+footer{
+    color: rgb(10, 10, 10);
+}
+/*selectores descendentes*/
+article p span{
+    font-size: 20px; /*tamallo de la letra*/
+    color: red; /*color de la letra*/
+    font-family: 'Times New Roman', Times, serif; /*tipo de letra*/
+    font-weight: bold; /*grueso de la letra*/
+}
+/*selector de clase*/
+.miclase{
+    background-color: aqua;
+
+}
+/*selector tipo ID*/
+#menu{
+    background-color: blueviolet;
+    color: black;
+}
+/*selector adyacente*/
+h1 + p {
+    text-decoration: underline;
+}
+#miP{
+    text-decoration: underline; color: red;
+}
+/*selector tipo pseudoclases*/
+.miA:hover {
+    background-color: black;
+    color: white;
+}
+.miA:visited{
+    background-color: yellow;
+    color: red;
+}
+.miB:hover {
+    background-color: blue;
+    color: yellow;
+}
+.miB:visited{
+    background-color: yellow;
+    color: red;
+}
+img:hover {
+    display: none;
+}
+.classimg:hover{
+    opacity: 0;
+}
+/*pseudoelementos*/
+footer p::before {
+    content: url(/IMG/images.png);
+}
+.miclase::first-line{
+    font-size: 30px;
+    color: red;
+}
+.i{
+    display: block;
+    
+}
+@font-face{
+    font-family: daniel;
+    src: url(/CSS/Sour_Gummy/SourGummy-Italic-VariableFont_wdth\,wght.ttf);
+}
+.miclase{
+    font-family: daniel;
+}
